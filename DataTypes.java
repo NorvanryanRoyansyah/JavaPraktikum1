@@ -1,4 +1,5 @@
-import  javax.swing.JOptionPane;
+import  javax.swing.JOptionPane; 
+import  java.util.Scanner; 
 
 public class DataTypes{
 	public static void main(String[]args){
@@ -12,14 +13,22 @@ public class DataTypes{
 		double  ipk  =  3.89764512; 
 		char  nilaiAbjad  =  'A'; 
 		
+		Scanner inputan = new Scanner(System.in);
+		
+		System.out.println("======== Fase Input ========");
+		System.out.println("Input nama depan : "); 
+		namaDepan = inputan.nextLine();
+		namaTengah =JOptionPane.showInputDialog("Nama tengah : ");
+		
+		System.out.println("======== Fase Output ========"); 
 		System.out.println("Nama  depan  :  "+  namaDepan); 
 		System.out.println("Nama  tengah  :  "+  namaTengah); 
 		System.out.println("Nama  belakang:  "+  namaBelakang); 
 		System.out.println("Usia  :  "  +  usia); 
 		System.out.println("Target  Kuliah  :  "  +  targetTahunKuliah  +  "  tahun"); 
 		System.out.println("IPK  :  "  +  ipk); 
-		System.out.println("Nilai  PBO:  "+  nilaiAbjad);
+		System.out.println("Nilai  PBO:  "+  nilaiAbjad);  
 		
-		JOptionPane.showMessageDialog(null,"Hai,  "+  namaDepan  +  namaTengah  +  namaBelakang);
+		JOptionPane.showMessageDialog(null,"Hai,  "+  namaDepan  +  namaTengah  +  namaBelakang); 
 	}
 }
